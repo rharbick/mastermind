@@ -22,13 +22,13 @@ def check_guess(guess, code):
         index += 1
 
     if response == ['B', 'B', 'B', 'B']:
-        return (True, response)
+        return (True, sorted(response))
     else:
-        return (False, response)
+        return (False, sorted(response))
 
 win = False
 code = generate_code()
-#print(f'DEBUG: CODE = {code}')
+
 
 print("Welcome to Mastermind!")
 while (not win):
